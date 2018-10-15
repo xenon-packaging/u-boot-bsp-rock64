@@ -1,15 +1,22 @@
 Source: u-boot-bsp-rock64
-Section: unknown
+Section: misc
 Priority: optional
 Maintainer: neon <rohan@garg.io>
-Build-Depends: debhelper (>= 10)
+Build-Depends: debhelper (>= 10), rkbin-bsp-rock64
 Standards-Version: 4.1.2
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: https://anonscm.debian.org/git/collab-maint/u-boot-bsp-rock64.git
-#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/u-boot-bsp-rock64.git
+Homepage: https://github.com/ayufan-rock64/linux-u-boot
 
 Package: u-boot-bsp-rock64
-Architecture: all
+Architecture: arm64
 Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: A boot loader for rockchip systems
+  Das U-Boot is a cross-platform bootloader for embedded systems,
+  used as the default boot loader by several board vendors.  It is
+  intended to be easy to port and to debug, and runs on many
+  supported architectures, including PPC, ARM, MIPS, x86, m68k,
+  NIOS, and Microblaze.
+  .
+  This package includes boot loaders for various Rockchip platforms.
+  .
+  Included platforms:
+  rock64-rk3328
