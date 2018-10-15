@@ -1,0 +1,5 @@
+u-boot-bsp-rock64 (2017.09-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- neon <rohan@garg.io>  Mon, 15 Oct 2018 11:51:08 +0200

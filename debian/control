@@ -1,0 +1,15 @@
+Source: u-boot-bsp-rock64
+Section: unknown
+Priority: optional
+Maintainer: neon <rohan@garg.io>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: https://anonscm.debian.org/git/collab-maint/u-boot-bsp-rock64.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/u-boot-bsp-rock64.git
+
+Package: u-boot-bsp-rock64
+Architecture: all
+Depends: ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_configure:
+	make rock64-rk3328_defconfig
+
+override_dh_auto_build:
+	dh_auto_build
+	./tools/mkimage -n rk3328 -T rksd -d rk3328_ddr_786MHz_v1.13.bin rksd_loader.img
+	cat spl/u-boot-spl.bin >> rksd_loader.img
+	make BL31=rk3328_bl31_v1.39.bin u-boot.itb
+
