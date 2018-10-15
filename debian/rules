@@ -7,7 +7,7 @@ override_dh_auto_configure:
 
 override_dh_auto_build:
 	dh_auto_build
-	./tools/mkimage -n rk3328 -T rksd -d /usr/lib/bl31/rk3328/rk3328_ddr_786MHz_v1.13.bin rksd_loader.img
+	./tools/mkimage -n rk3328 -T rksd -d /usr/lib/atf/rk3328/rk3328_ddr_786MHz_v1.13.bin rksd_loader.img
 	cat spl/u-boot-spl.bin >> rksd_loader.img
-	make BL31=/usr/lib/atf/rk3328/rk3328_bl31_v1.39.bin u-boot.itb
+	make BL31=/usr/lib/bl31/rk3328/rk3328_bl31_v1.39.bin u-boot.itb
 
