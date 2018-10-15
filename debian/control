@@ -4,8 +4,10 @@ Priority: optional
 Maintainer: neon <rohan@garg.io>
 Build-Depends: debhelper (>= 10),
                device-tree-compiler,
+               libpython-dev
+               rkbin-bsp-rock64,
                python-pyelftools,
-               rkbin-bsp-rock64
+               swig
 Standards-Version: 4.1.2
 Homepage: https://github.com/ayufan-rock64/linux-u-boot
 
