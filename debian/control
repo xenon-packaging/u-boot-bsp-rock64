@@ -2,7 +2,7 @@ Source: u-boot-bsp-rock64
 Section: misc
 Priority: optional
 Maintainer: neon <rohan@garg.io>
-Build-Depends: debhelper (>= 10), rkbin-bsp-rock64
+Build-Depends: debhelper (>= 10), device-tree-compiler, rkbin-bsp-rock64
 Standards-Version: 4.1.2
 Homepage: https://github.com/ayufan-rock64/linux-u-boot
 
